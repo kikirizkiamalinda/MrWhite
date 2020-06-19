@@ -1,0 +1,1 @@
+webSetting/component

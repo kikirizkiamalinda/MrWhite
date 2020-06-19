@@ -1,0 +1,601 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Markazi+Text|Kalam|Kaushan+Script|Chela+One|Permanent+Marker|Boogaloo|Cabin|Roboto+Slab");
+
+// Variables
+@import "variables";
+// @import "bobo";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import './select2.min.css';
+@import './component/_shop.scss';
+@import './component/_pagination.scss';
+@import './component/_search.scss';
+@import './component/_animation.scss';
+@import './component/jquery-ui.css';
+@import '~owl.carousel/dist/assets/owl.carousel.css';
+@import '~owl.carousel/dist/assets/owl.theme.default.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+// @import '~flickity/css/flickity';
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+
+.breadcrumb-item{
+  font-family: 'Cabin', cursive;
+  li{
+    color: #000000;
+    list-style: none;
+  }
+  a{
+    color: #000000;
+  }
+}
+
+.breadcrumb-item a:hover{
+  color: #19B5FE;
+}
+
+.list-unstyled{
+  li{
+    color: #fff;
+    list-style: none;
+  }
+  a{
+    color: #fff;
+  }
+}
+
+.list-unstyled a:hover{
+  color: #19B5FE;
+}
+
+
+//css for card image
+.image {
+  height: 30rem;
+  width: 100%;
+  opacity: 1;
+  display: block;
+  object-fit: contain;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image1 {
+  height: 20rem;
+  width: 100%;
+  opacity: 1;
+  display: block;
+  object-fit: contain;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.image2 {
+  height: 15rem;
+  width: 100%;
+  opacity: 1;
+  display: block;
+  object-fit: contain;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image3 {
+  max-height: 30rem;
+  object-fit: fill;
+  height: auto !important;
+  width: 100%;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.image4{
+  width: 100%;
+  height: 20rem !important;
+  object-fit:fill;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  font-family: 'Chela One', cursive;
+  transition: .5s ease;
+  color: #000;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+.middle2{
+  font-family: 'Chela One', cursive;
+  transition: .5s ease;
+  color: #000;
+  opacity: 0;
+  position: absolute;
+  font-size: 24px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.card:hover .image {
+  opacity: 0.4;
+}
+.card:hover .image1 {
+  opacity: 0.4;
+}
+.card:hover .image2 {
+  opacity: 0.4;
+
+}.card:hover .image3 {
+  opacity: 0.7;
+}
+.card:hover .image4 {
+  opacity: 0.4;
+}
+.card:hover .middle {
+  opacity: 1;
+}
+.card:hover .middle2 {
+  opacity: 1;
+}
+
+.text1 {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.card-footer a:hover{
+  color: #19B5FE;
+}
+//css for navbar
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+//horizontal list
+.border-awsm{
+ border-bottom: 1px solid #000;
+ float:left;
+ width:100%;
+ overflow:hidden;
+ position:relative;
+ margin-bottom: 4rem;
+}
+.centeredmenu {
+ font-family: 'Markazi Text', cursive;
+ float:left;
+ width:100%;
+ overflow:hidden;
+ position:relative;
+ ul {
+   clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+ }
+ ul li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0.1rem;
+   padding:0;
+   position:relative;
+   right:50%;
+   padding:1rem;
+ }
+ h1 {
+  text-align:center;
+  font-size: 36pt;
+}
+ul li a {
+
+ text-decoration:none;
+ line-height:1.3em;
+}
+ul li a:hover {
+ background:#6C7A89;
+ color:#fff;
+}
+ul li a.active:hover {
+ color:#fff;
+ background:#000;
+ font-weight:bold;
+}
+}
+.centeredmenu ul li a.active,
+
+.card-footer {
+  font-family: 'Kalam', cursive;
+  margin-bottom: 2rem;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidebar-area {
+  background-color: #eee;
+  position: relative;
+  width: 20%;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/image/ca2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  
+}
+
+.hero h1 {
+  font-size: 5em;
+  color: white;
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: -5rem;
+}
+
+.hero .btn-awsm {
+  /* Positioning and sizing */
+  display: block;
+  width: 10rem;
+
+  /* Padding and margins */
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Text styles */
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+
+  /* Border styles */
+  border: 2px solid white;
+  border-radius: 1rem;
+
+}
+
+.hero .input-inner{
+  display: block;
+  width: 70%;
+  padding: 1rem;
+  z-index: 5;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -1rem;
+  font-family: 'Boogaloo', cursive;
+  font-size: 24px;
+  text-decoration: none;
+  border: 2px solid white;
+}
+
+
+
+.hero-inner{
+  font-family: 'Kalam', cursive;
+}
+
+.input-inner:hover{
+  border: 2px solid #446CB3;
+}
+
+.btn-awsm {
+  /* Positioning and sizing */
+  display: block;
+  width: 10rem;
+
+  /* Padding and margins */
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+
+  /* Text styles */
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+
+  /* Border styles */
+  border: 2px solid gray;
+  border-radius: 1rem;
+
+}
+.btn-awsm:hover{
+  color:white;
+  background-color: black;
+}
+
+.bgimg-1{
+  min-height: 30rem;
+  position:relative;
+  opacity: 0.65;
+  margin-top: 7rem;
+  margin-bottom: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/image/ca3.jpg");
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+  }
+}
+
+.invinsible {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.site-main {
+  width: 80%;
+}
+
+.container{
+  margin-bottom: 1rem;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .custom {
+  font-family: 'Gloria Hallelujah', cursive;
+  color:white;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bg-awsm{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("/image/bg-login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.font-detail{
+  h1{
+    font-family: 'Boogaloo', cursive;
+  }
+  p{
+    font-family: 'Cabin', cursive;
+  }
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVGhD7de9K0VhHMDxK1IM/gGULBiEhcEmBgaDibzskpcSg8FAkUkSJZuULFaDFMrCQDEqxaBMyEvk7fsrp063n3vPLdd9ntvvW5/l1n3u86tzz3NOzLIsy7IsK/vKwwjWUC0f+FgxDvD14xje1YhbBEOIO3hVJ14QHsK7QYbwifghvBpkFNoAAS8GGYe2+TDnB5mAtvF498iHkyW7nDQPuMQRtrGOBUxiAHKzaEYtSlGItNaN3/7Yf+0Z1zjFLjaxjGnIgduLNjSgAJFrwiu0H820DUSqAvLH1RZxgVwlZUhYDs6hLeCSLiSsHNoXXTOIhOXiAtqXXdKHpNXhCdoCrqhCpNrxDm2RTNtDSvVDWyjd3nADuensYwurmIEc0PIelHKz0H4sKrlEr3CCHcgZsIQpDKMHraiH3GiKkJbkdrwCbZPxZNNykNagBCmdwP+RDCOPC9rmw7x4jJdhFqENEPDmxUqGmYc2hPBmkKAxfMD7QaQOPML7QaRKnCEYRB5tvE3e7uZwiBb5wLIsy7Isy8q2YrFvCWbvZzzzLV8AAAAASUVORK5CYII=");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVGhD7dbLKwVRHMDxq1goj4WU8spCkQVlQSywlJKd18JKKVaSshCl2MjCY8eSsvEHyKPsZEexU1KIkJWU1/enpm46986c+5g5p863Pou7OTO/7syZE3O5XC6XyxVOOZjDHbZRBSvrxk+cV/TDuoYQP4hnC/mwpkSDiDNUwIqSDSIe0A7j8xtEvKMXRhdkEPGJERhb0EHENyZhZDqDeBYh35+sJ9tmDdrQhzHMYhU7OMYF5EX+gupm/awjY8N0YRqbOMIl3qC6cDYsI+1kCHkBVRcI0zzS6gCqhaMwhZQqggn/hkd2s2Fo1wrVglH6QBO06oFqsagtQatOqBaKmmzzWpVDtVCUzlEI7a6hWjAKt0j5uL8A1aJhu0ctUq4UT1AtHpZHNCDtKjGAGWxgDye4wjNUF8+UFzQilPJQhnrIAVK2bflwTUAOkSs4hOpGk5EnoRlGpXuMv0EdjEtnEDldy+NsZEEHOUUJjC3IIPsogNH5DbKGXBhfokHkNDsKaxrE/yHk+NMCq6qGfNy8IXZRDCuTs9I4Ov5+uVwul8vlykax2C8aeFFiIUl65wAAAABJRU5ErkJggg==");
+}
+
+.sale{
+  font-family:'Kaushan Script', cursive;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+.gallery-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.item:hover .image1{
+  opacity: 0.4;
+}

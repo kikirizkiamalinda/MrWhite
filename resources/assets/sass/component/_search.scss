@@ -1,0 +1,67 @@
+.awsm-search{
+  width: 70%;
+  padding: 1rem;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Cabin', cursive;
+  font-size: 16pt;
+}
+
+.awsm-search input#search{
+  width: 70%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  font-size: 16pt;
+  color: #000;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+
+  -webkit-transition: background .55s ease;
+  -moz-transition: background .55s ease;
+  -ms-transition: background .55s ease;
+  -o-transition: background .55s ease;
+  transition: background .55s ease;
+}
+
+.awsm-search .icon{
+  // float:left;
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: -17px;
+  z-index: 5;
+  color: #000;
+}
+
+.awsm-search input#search:hover, .awsm-search input#search:focus, .awsm-search input#search:active{
+  outline:none;
+  background: #fff;
+
+
+}
+.awsm-search input#search::-webkit-input-placeholder {
+ color: #6C7A89;
+}
+
+.awsm-search input#search:-moz-placeholder { /* Firefox 18- */
+ color: #6C7A89;  
+}
+
+.awsm-search input#search::-moz-placeholder {  /* Firefox 19+ */
+ color: #6C7A89;  
+}
+
+.awsm-search input#search:-ms-input-placeholder {  
+ color: #6C7A89;  
+}
